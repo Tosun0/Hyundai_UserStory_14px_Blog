@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나는 기능보다 SDV 철학이 궁금하다</title>
+  <!-- Pretendard Font CDN -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="style.css?v=20260812-universal-canvas-r2">
+</head>
+<body data-indicator-tone="white">
+  <header class="top-center-header universal-scenario-header">
+    <h1 class="header-title">나는 기능보다 SDV 철학이 궁금하다</h1>
+  </header>
+
+  <!-- Top Global Navigation Bar -->
+  <header class="naver-global-header">
+    <div class="global-header-inner">
+      <div class="global-header-left">
+      </div>
+      <div class="global-header-right">
+        <a href="#">내 블로그</a>
+        <span class="nav-sep">|</span>
+        <a href="#">이웃블로그</a>
+        <span class="nav-sep">|</span>
+        <a href="#">블로그홈</a>
+        <span class="nav-sep">|</span>
+        <a href="#" class="nav-login">로그인</a>
+        <button type="button" class="btn-grid-apps" title="서비스 더보기">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 10h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 16h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="blog-wrapper">
+
+    <!-- #1. 배너 -->
+    <header class="blog-banner-section">
+      <div class="banner-content">
+        <h1 class="blog-main-title">
+          나는 기능보다 SDV 철학이 궁금하다
+        </h1>
+        <p class="blog-subtitle">가전 · 모바일 · 자동차 — 왜 그렇게 만들었는지까지</p>
+      </div>
+      <nav class="blog-subnav">
+        <div class="subnav-left">
+          <a href="#" class="subnav-item">프롤로그</a>
+          <a href="#" class="subnav-item active">블로그 <span class="post-count-badge">4</span></a>
+        </div>
+        <div class="subnav-right">
+          <a href="#" class="subnav-item">안부</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content Columns: Sidebar (Left) + Main (Right) -->
+    <div class="blog-body-layout">
+
+      <!-- Left Sidebar Column -->
+      <aside class="blog-sidebar">
+
+        <!-- #2. 프로필 -->
+        <section class="widget-profile-box">
+          <div class="profile-avatar-wrapper">
+            <img src="assets/Playbook/profile.jpg" alt="얼리김 프로필" class="profile-avatar-img">
+          </div>
+          <div class="profile-info">
+            <div class="profile-nickname-row">
+              <strong class="profile-nickname">얼리김</strong>
+              <span class="profile-id">jmk8684</span>
+            </div>
+            <p class="profile-intro">
+              새 물건 나오면 일단 먼저 삽니다. 쓰면서 알게 된 건 여기 정리해둬요. 기능보다 왜 그렇게 만들었는지가 늘 더 궁금합니다.
+            </p>
+            <div class="profile-actions">
+              <a href="#" class="profile-link">프로필 <span class="arrow">▶</span></a>
+            </div>
+            <button type="button" class="btn-add-neighbor" id="btnOpenNeighborModal">
+              <span class="plus-ic">+</span> 이웃추가
+            </button>
+          </div>
+        </section>
+
+        <!-- #3. 카테고리 -->
+        <section class="widget-category-box">
+          <div class="category-header">
+            <span class="category-title">카테고리</span>
+            <span class="toggle-ic">▲</span>
+          </div>
+          <ul class="category-list">
+            <li class="cat-item cat-all" data-cat="all">
+              <div class="cat-row">
+                <span class="cat-ic">📋</span>
+                <span class="cat-name">전체보기</span>
+                <span class="cat-count">(178)</span>
+              </div>
+            </li>
+            <!-- 관찰 노트 -->
+            <li class="cat-item cat-parent active" data-cat="observation">
+              <div class="cat-row">
+                <span class="cat-ic">📁</span>
+                <span class="cat-name">관찰 노트</span>
+              </div>
+              <ul class="sub-category-list">
+                <!-- GN8 -->
+                <li class="cat-item cat-child active" data-cat="gn8">
+                  <div class="cat-row">
+                    <span class="sub-tree-ic">└</span>
+                    <span class="cat-ic">📄</span>
+                    <span class="cat-name">GN8</span>
+                    <span class="badge-new">N</span>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="cat-item" data-cat="us-stock">
+              <div class="cat-row">
+                <span class="cat-ic">📄</span>
+                <span class="cat-name">미국 개별주 분석</span>
+              </div>
+            </li>
+            <li class="cat-item" data-cat="macro">
+              <div class="cat-row">
+                <span class="cat-ic">📄</span>
+                <span class="cat-name">내가 보는 거시경제</span>
+              </div>
+            </li>
+            <li class="cat-item" data-cat="coin">
+              <div class="cat-row">
+                <span class="cat-ic">📄</span>
+                <span class="cat-name">코인</span>
+              </div>
+            </li>
+            <li class="cat-item" data-cat="semiconductor">
+              <div class="cat-row">
+                <span class="cat-ic">📄</span>
+                <span class="cat-name">반도체</span>
+              </div>
+            </li>
+            <li class="cat-item" data-cat="ai-auto">
+              <div class="cat-row">
+                <span class="cat-ic">📄</span>
+                <span class="cat-name">AI·자동화</span>
+              </div>
+            </li>
+            <li class="cat-item" data-cat="daily">
+              <div class="cat-row">
+                <span class="cat-ic">📄</span>
+                <span class="cat-name">일상</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </aside>
+
+      <!-- Right Main Content Column -->
+      <main class="blog-main-content">
+
+        <!-- Category View Header with 목록열기 Toggle -->
+        <div class="post-view-header">
+          <div class="view-header-left">
+            <h2 class="current-category-name" id="currentCategoryTitle">관찰 노트 > GN8</h2>
+            <span class="category-post-count"><strong id="postCountNum">4</strong>개의 글</span>
+          </div>
+          <div class="view-header-right">
+            <button type="button" class="btn-toggle-list" id="btnToggleList">
+              <span class="txt">목록열기</span>
+              <span class="arrow-icon">▼</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Collapsible List Drawer (목록) -->
+        <div class="post-list-drawer" id="postListDrawer">
+          <table class="list-table">
+            <thead>
+              <tr>
+                <th class="th-title">글 제목</th>
+                <th class="th-date">작성일</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="list-row" onclick="scrollToPost('post-1')">
+                <td class="td-title"><span class="bullet">└</span> 현대차가 차를 "다시 설계했다"는데, 뭘 버린 걸까요?</td>
+                <td class="td-date">3월 14일</td>
+              </tr>
+              <tr class="list-row" onclick="scrollToPost('post-2')">
+                <td class="td-title"><span class="bullet">└</span> GN8가 SDV라던데 제대로 된 정의가 없네요</td>
+                <td class="td-date">3월 16일</td>
+              </tr>
+              <tr class="list-row" onclick="scrollToPost('post-5')">
+                <td class="td-title"><span class="bullet">└</span> 버튼 없앤 이유를 설명한 회사를 찾았는데, 우리 차가 아니네요</td>
+                <td class="td-date">4월 12일</td>
+              </tr>
+              <tr class="list-row" onclick="scrollToPost('post-6')">
+                <td class="td-title"><span class="bullet">└</span> 내일 인수인데, 아직 이 차를 한 줄로 설명 못 하겠어요</td>
+                <td class="td-date">4월 17일</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="list-pagination">
+            <span class="active-page">1</span> / 1
+          </div>
+        </div>
+
+        <!-- Posts Stack Container -->
+        <div class="posts-stack" id="postsContainer">
+
+          <!-- POST 1: 3월 14일 -->
+          <article class="post-card" id="post-1">
+            <div class="post-header-meta">
+              <span class="post-category-tag">관찰 노트 · GN8</span>
+              <h1 class="post-title">현대차가 차를 "다시 설계했다"는데, 뭘 버린 걸까요?</h1>
+              <div class="post-author-bar">
+                <img src="assets/Playbook/profile.jpg" alt="얼리김" class="author-mini-img">
+                <span class="author-name">얼리김</span>
+                <span class="post-date">3월 14일</span>
+                <div class="post-top-actions">
+                  <button type="button" class="btn-copy-url" onclick="copyUrlNotice()">URL 복사</button>
+                  <button type="button" class="btn-post-neighbor" onclick="openNeighborModal()">+ 이웃추가</button>
+                  <button type="button" class="btn-more-ic">⋮</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-divider-line"></div>
+
+            <div class="post-content-body">
+              <p class="post-p">기사 하나 읽다가 멈췄어요. <span class="text-mark font-weight-800">"소프트웨어 중심으로 차를 다시 설계했다"</span>는 구절 때문인데요.</p>
+              <p class="post-p">다시 설계했다는 건 뭔가를 버렸다는 뜻이잖아요. 그런데 뭘 버렸는지는 안 나오더라고요.</p>
+              <br>
+              <div class="post-media-box">
+                <img src="assets/Playbook/software_car.png" alt="현대자동차 소프트웨어 중심 관찰" class="post-media-img">
+                <p class="post-media-caption">현대자동차 소프트웨어 중심 구조 및 자율주행 인터페이스 관찰 노트</p>
+              </div>
+              <br>
+              <p class="post-p highlight-key-plain"><strong>그리고 왜 하필 지금일까요? 이 기술이 어제 갑자기 생긴 것도 아닌데요.</strong></p>
+            </div>
+
+            <div class="post-footer-bar">
+              <div class="footer-left">
+                <button type="button" class="btn-sympathy" onclick="toggleSympathy(this)">
+                  <span class="heart-icon">♥</span>
+                  <span class="sympathy-txt">공감</span>
+                  <span class="sympathy-count">18</span>
+                </button>
+                <a href="#comments" class="btn-comment">
+                  <span class="comment-icon">💬</span>
+                  <span class="comment-txt">댓글</span>
+                  <span class="comment-count">3</span>
+                </a>
+              </div>
+              <div class="footer-right">
+                <button type="button" class="btn-share">공유</button>
+                <button type="button" class="btn-report">신고</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- POST 2: 3월 16일 -->
+          <article class="post-card" id="post-2">
+            <div class="post-header-meta">
+              <span class="post-category-tag">관찰 노트 · GN8</span>
+              <h1 class="post-title">GN8가 SDV라던데 제대로 된 정의가 없네요</h1>
+              <div class="post-author-bar">
+                <img src="assets/Playbook/profile.jpg" alt="얼리김" class="author-mini-img">
+                <span class="author-name">얼리김</span>
+                <span class="post-date">3월 16일</span>
+                <div class="post-top-actions">
+                  <button type="button" class="btn-copy-url" onclick="copyUrlNotice()">URL 복사</button>
+                  <button type="button" class="btn-post-neighbor" onclick="openNeighborModal()">+ 이웃추가</button>
+                  <button type="button" class="btn-more-ic">⋮</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-divider-line"></div>
+
+            <div class="post-content-body">
+              <p class="post-p">GN8가 SDV라고 하던데 기존 제네시스랑 크게 뭔가 달라질 것 같은 느낌이에요. 하지만 GN8에 대해 찾아보니 기능, 소재, 트림에 대한 소개만 많을 뿐 정작 <strong>SDV에 대한 구체적인 설명은 보이지 않더라고요.</strong></p>
+              <br>
+              <div class="post-media-box">
+                <img src="assets/Playbook/gn8_articles.png" alt="GN8 및 관련 기사 관찰 노트" class="post-media-img">
+                <p class="post-media-caption">GN8 주요 보도자료 및 신기술 관련 기사 관찰 노트</p>
+              </div>
+              <br>
+              <p class="post-p">아이폰 나왔을 때도 다들 사양만 물어봤었죠. 하지만 그때 진짜 핵심이었던 건 <span class="text-mark font-weight-800">"컴퓨터를 주머니에 넣는다"</span>는 한 줄이었어요.</p>
+              <p class="post-p">그 한 줄을 먼저 잡은 사람은 나머지를 굳이 안 외워도 됐거든요.</p>
+              <br>
+              <p class="post-p highlight-key-plain"><strong>SDV의 그 핵심 한 줄은 과연 뭘까요? 아직 아무 데서도 못 찾았어요.</strong></p>
+            </div>
+
+            <div class="post-footer-bar">
+              <div class="footer-left">
+                <button type="button" class="btn-sympathy" onclick="toggleSympathy(this)">
+                  <span class="heart-icon">♥</span>
+                  <span class="sympathy-txt">공감</span>
+                  <span class="sympathy-count">34</span>
+                </button>
+                <a href="#comments" class="btn-comment">
+                  <span class="comment-icon">💬</span>
+                  <span class="comment-txt">댓글</span>
+                  <span class="comment-count">7</span>
+                </a>
+              </div>
+              <div class="footer-right">
+                <button type="button" class="btn-share">공유</button>
+                <button type="button" class="btn-report">신고</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- POST 5 (4월 12일) -->
+          <article class="post-card" id="post-5">
+            <div class="post-header-meta">
+              <span class="post-category-tag">관찰 노트 · GN8</span>
+              <h1 class="post-title">버튼 없앤 이유를 설명한 회사를 찾았는데, 우리 차가 아니네요</h1>
+              <div class="post-author-bar">
+                <img src="assets/Playbook/profile.jpg" alt="얼리김" class="author-mini-img">
+                <span class="author-name">얼리김</span>
+                <span class="post-date">4월 12일</span>
+                <div class="post-top-actions">
+                  <button type="button" class="btn-copy-url" onclick="copyUrlNotice()">URL 복사</button>
+                  <button type="button" class="btn-post-neighbor" onclick="openNeighborModal()">+ 이웃추가</button>
+                  <button type="button" class="btn-more-ic">⋮</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-divider-line"></div>
+
+            <div class="post-content-body">
+              <blockquote class="naver-quote-box">
+                <span class="quote-label">알게 된 것</span>
+                <span class="quote-text">— 물리 버튼을 없앤 이유를 원가가 아니라 "배치를 나중에 바꾸기 위해서"라고 설명한 엔지니어 인터뷰를 찾았어요. 다른 회사 자료지만요.</span>
+              </blockquote>
+
+              <p class="post-p">무엇을 포기했는지 솔직하게 말하는 회사가 있긴 하더라고요.</p>
+              <p class="post-p">포기한 걸 당당히 말한다는 건 그만큼 방향성에 확신이 있다는 뜻이겠죠.</p>
+              <br>
+              <p class="post-p highlight-key-plain"><strong>3주간 찾던 답에 제일 가까운데, 정작 내 차 얘기가 아니네요...</strong></p>
+            </div>
+
+            <div class="post-footer-bar">
+              <div class="footer-left">
+                <button type="button" class="btn-sympathy" onclick="toggleSympathy(this)">
+                  <span class="heart-icon">♥</span>
+                  <span class="sympathy-txt">공감</span>
+                  <span class="sympathy-count">25</span>
+                </button>
+                <a href="#comments" class="btn-comment">
+                  <span class="comment-icon">💬</span>
+                  <span class="comment-txt">댓글</span>
+                  <span class="comment-count">2</span>
+                </a>
+              </div>
+              <div class="footer-right">
+                <button type="button" class="btn-share">공유</button>
+                <button type="button" class="btn-report">신고</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- POST 6: 4월 17일 · 인수 전날 -->
+          <article class="post-card" id="post-6">
+            <div class="post-header-meta">
+              <span class="post-category-tag">관찰 노트 · GN8</span>
+              <h1 class="post-title">내일 인수인데, 아직 이 차를 한 줄로 설명 못 하겠어요</h1>
+              <div class="post-author-bar">
+                <img src="assets/Playbook/profile.jpg" alt="얼리김" class="author-mini-img">
+                <span class="author-name">얼리김</span>
+                <span class="post-date">4월 17일 · 인수 전날</span>
+                <div class="post-top-actions">
+                  <button type="button" class="btn-copy-url" onclick="copyUrlNotice()">URL 복사</button>
+                  <button type="button" class="btn-post-neighbor" onclick="openNeighborModal()">+ 이웃추가</button>
+                  <button type="button" class="btn-more-ic">⋮</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-divider-line"></div>
+
+            <div class="post-content-body">
+              <p class="post-p">솔직히 기대되는 건 사실이에요.</p>
+              <p class="post-p">다만 <span class="text-mark font-weight-800">왜 아직도 현대차가 뭘 위해서 SDV로 전환했는지</span> 좀 더 구체적으로 알고 싶더라고요.</p>
+              <br>
+              <div class="post-media-box">
+                <img src="assets/Playbook/car.jpg" alt="차량 인테리어 관찰" class="post-media-img">
+                <p class="post-media-caption">GN8 관찰 노트 — 차 안에서 마주한 인터페이스와 소프트웨어의 첫인상</p>
+              </div>
+            </div>
+
+            <div class="post-footer-bar">
+              <div class="footer-left">
+                <button type="button" class="btn-sympathy" onclick="toggleSympathy(this)">
+                  <span class="heart-icon">♥</span>
+                  <span class="sympathy-txt">공감</span>
+                  <span class="sympathy-count">56</span>
+                </button>
+                <a href="#comments" class="btn-comment">
+                  <span class="comment-icon">💬</span>
+                  <span class="comment-txt">댓글</span>
+                  <span class="comment-count">15</span>
+                </a>
+              </div>
+              <div class="footer-right">
+                <button type="button" class="btn-share">공유</button>
+                <button type="button" class="btn-report">신고</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+    <!-- Scenario Canvas -->
+    <section class="page-section" id="scenario-canvas" aria-label="시나리오 캔버스">
+      <div class="canvas-sticky">
+        <div class="canvas-slides-container" aria-live="polite">
+          <article class="canvas-slide active" data-canvas-index="0">
+            <div class="canvas-frame"><img src="assets/ScenarioCanvas/3_ScenarioCanvas_01.jpg" alt="시나리오 캔버스 01"></div>
+          </article>
+          <article class="canvas-slide" data-canvas-index="1">
+            <div class="canvas-frame"><img src="assets/ScenarioCanvas/3_ScenarioCanvas_02.jpg" alt="시나리오 캔버스 02"></div>
+          </article>
+          <article class="canvas-slide" data-canvas-index="2">
+            <div class="canvas-frame"><img src="assets/ScenarioCanvas/3_ScenarioCanvas_03.jpg" alt="시나리오 캔버스 03"></div>
+          </article>
+          <article class="canvas-slide" data-canvas-index="3">
+            <div class="canvas-frame"><img src="assets/ScenarioCanvas/3_ScenarioCanvas_04.jpg" alt="시나리오 캔버스 04"></div>
+          </article>
+        </div>
+
+        <div class="canvas-bottom-controls">
+          <div id="scenario-indicator" class="canvas-pagination" aria-label="시나리오 캔버스 페이지">
+            <div class="pagination-dots">
+              <button class="p-dot active" type="button" data-idx="0" aria-label="1페이지"></button>
+              <button class="p-dot" type="button" data-idx="1" aria-label="2페이지"></button>
+              <button class="p-dot" type="button" data-idx="2" aria-label="3페이지"></button>
+              <button class="p-dot" type="button" data-idx="3" aria-label="4페이지"></button>
+            </div>
+            <span id="indicator-counter" class="pagination-text">01 / 04</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Footer -->
+    <footer class="blog-footer">
+      <p>Copyright © <strong>early_kim76</strong> All Rights Reserved.</p>
+      <p class="footer-sub">Blog Interface Recreated for early_kim (얼리김)</p>
+    </footer>
+
+  <!-- Neighbor Add Modal Popup -->
+  <div class="modal-backdrop" id="neighborModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>이웃 추가</h3>
+        <button type="button" class="btn-close-modal" id="btnCloseNeighborModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="target-user-info">
+          <img src="assets/Playbook/profile.jpg" alt="얼리김">
+          <div>
+            <strong>얼리김</strong> <span>(early_kim76)</span>
+            <p>새 물건 나오면 일단 먼저 삽니다.</p>
+          </div>
+        </div>
+        <div class="neighbor-type-options">
+          <label class="radio-label">
+            <input type="radio" name="neighborType" value="neighbor" checked>
+            <span><strong>이웃</strong>으로 추가합니다.</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="neighborType" value="mutual">
+            <span><strong>서로이웃</strong>을 신청합니다.</span>
+          </label>
+        </div>
+        <div class="neighbor-msg-box" id="neighborMsgBox">
+          <textarea placeholder="우리 서로이웃 해요~ (기본 메시지)" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-modal-cancel" id="btnCancelModal">취소</button>
+        <button type="button" class="btn-modal-submit" id="btnSubmitNeighbor">확인</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copy Toast Notification -->
+  <div class="toast-notice" id="toastNotice">
+    URL이 클립보드에 복사되었습니다.
+  </div>
+
+  <script src="app.js?v=20260812-universal-canvas-r2"></script>
+</body>
+</html>
