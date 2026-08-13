@@ -840,6 +840,7 @@ body[data-indicator-tone="white"] {
   white-space: nowrap;
 }
 
+body.playbook-active .universal-scenario-header,
 body.scenario-active .universal-scenario-header {
   opacity: 1;
   transform: translate(-50%, 0);

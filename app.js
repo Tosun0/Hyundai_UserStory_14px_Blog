@@ -217,7 +217,9 @@ function initScenarioCanvas() {
     const travel = Math.max(canvas.offsetHeight - window.innerHeight, 1);
     const progress = Math.max(0, Math.min(1, (window.scrollY - canvas.offsetTop) / travel));
     const index = Math.min(slides.length - 1, Math.floor(progress * slides.length));
-    document.body.classList.toggle('scenario-active', window.scrollY >= canvas.offsetTop && window.scrollY < canvas.offsetTop + canvas.offsetHeight);
+    const inScenario = window.scrollY >= canvas.offsetTop && window.scrollY < canvas.offsetTop + canvas.offsetHeight;
+    document.body.classList.toggle('scenario-active', inScenario);
+    document.body.classList.toggle('playbook-active', window.scrollY < canvas.offsetTop);
     slides.forEach((slide, slideIndex) => slide.classList.toggle('active', slideIndex === index));
     if (indicatorCounter) indicatorCounter.textContent = `${String(index + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
     dots.forEach((dot, dotIndex) => dot.classList.toggle('active', dotIndex === index));
