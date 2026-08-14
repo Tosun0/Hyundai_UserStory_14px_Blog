@@ -158,6 +158,8 @@ button {
 }
 
 .blog-main-title {
+  position: relative;
+  z-index: 1201;
   font-family: 'Pretendard Variable', Pretendard, sans-serif;
   font-size: 30px; /* Increased banner title size */
   font-weight: 800;
@@ -809,7 +811,7 @@ body[data-indicator-tone="white"] {
 
 .universal-scenario-header {
   position: fixed;
-  z-index: 500;
+  z-index: 1200;
   top: 32px;
   left: 50%;
   display: inline-flex;
