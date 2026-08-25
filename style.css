@@ -855,14 +855,19 @@ body.scenario-active .naver-global-header {
 
 #scenario-canvas {
   position: relative;
-  height: calc(10 * 100vh);
+  height: auto;
   min-height: 100vh;
-  scroll-snap-align: start;
   background:
     radial-gradient(circle at 50% 18%, rgb(255 255 255 / .68), transparent 40%),
     rgb(232 231 228 / .88);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+}
+
+#scenario-canvas::after {
+  content: "";
+  display: block;
+  min-height: 900vh;
 }
 
 .canvas-sticky {
