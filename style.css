@@ -855,7 +855,7 @@ body.scenario-active .naver-global-header {
 
 #scenario-canvas {
   position: relative;
-  height: calc(4 * 100vh);
+  height: calc(10 * 100vh);
   min-height: 100vh;
   scroll-snap-align: start;
   background:
