@@ -209,8 +209,10 @@ function initScenarioCanvas() {
   const canvas = document.getElementById('scenario-canvas');
   const slides = [...document.querySelectorAll('.canvas-slide')];
   const indicatorCounter = document.getElementById('indicator-counter');
-  const dots = [...document.querySelectorAll('.p-dot')];
+  const dotsContainer = document.querySelector('#scenario-indicator .pagination-dots');
   if (!canvas || slides.length === 0) return;
+  dotsContainer.innerHTML = slides.map((_, index) => `<button class="p-dot${index === 0 ? ' active' : ''}" type="button" data-idx="${index}" aria-label="${index + 1}페이지"></button>`).join('');
+  const dots = [...dotsContainer.querySelectorAll('.p-dot')];
 
   let frame = 0;
   const update = () => {
