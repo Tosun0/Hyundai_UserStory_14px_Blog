@@ -211,6 +211,7 @@ function initScenarioCanvas() {
   const indicatorCounter = document.getElementById('indicator-counter');
   const dotsContainer = document.querySelector('#scenario-indicator .pagination-dots');
   if (!canvas || slides.length === 0) return;
+  canvas.style.setProperty('--scenario-scroll-distance', `${slides.length * 100}dvh`);
   dotsContainer.innerHTML = slides.map((_, index) => `<button class="p-dot${index === 0 ? ' active' : ''}" type="button" data-idx="${index}" aria-label="${index + 1}페이지"></button>`).join('');
   const dots = [...dotsContainer.querySelectorAll('.p-dot')];
 
