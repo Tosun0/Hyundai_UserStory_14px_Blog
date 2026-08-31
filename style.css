@@ -906,8 +906,8 @@ body.scenario-active .naver-global-header {
 }
 
 .canvas-frame {
-  width: min(calc(100vw - 48px), calc(100dvh - 64px), 960px);
-  height: min(calc(100vw - 48px), calc(100dvh - 64px), 960px);
+  width: min(calc(100vw - 32px), calc(100dvh - 32px), 1080px);
+  height: min(calc(100vw - 32px), calc(100dvh - 32px), 1080px);
   display: grid;
   place-items: center;
 }
